@@ -2,7 +2,7 @@ package com.ld.test.dataStruct.binaryTree;
 
 /**
  * @className TreeNode
- * @description todo
+ * @description 二叉树结构
  * @date 2021/7/26 16:56
  **/
 public class TreeNode {

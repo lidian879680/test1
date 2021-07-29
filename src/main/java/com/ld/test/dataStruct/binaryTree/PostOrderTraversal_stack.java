@@ -5,7 +5,7 @@ import java.util.Objects;
 
 /**
  * @className PreOrderTraversal_stack
- * @description
+ * @description 二叉树后续遍历，stack
  * @date 2021/7/26 17:14
  **/
 public class PostOrderTraversal_stack {
