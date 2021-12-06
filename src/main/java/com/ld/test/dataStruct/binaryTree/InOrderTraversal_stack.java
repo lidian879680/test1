@@ -1,5 +1,6 @@
 package com.ld.test.dataStruct.binaryTree;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Objects;
 
@@ -38,6 +39,7 @@ public class InOrderTraversal_stack {
         LinkedList<TreeNode> stack = new LinkedList<>();
         stack.addFirst(root);
         while (stack.size() > 0) {
+            System.out.println(Arrays.toString(stack.toArray()));
             TreeNode treeNode = stack.pop();
             TreeNode leftNode = treeNode.getLeft();
             TreeNode rightNode = treeNode.getRight();

@@ -3,7 +3,7 @@ package com.ld.test.dataStruct.binaryTree;
 import java.util.Objects;
 
 /**
- * 二叉树前序遍历，递归
+ * 二叉树中序遍历，递归
  */
 public class InOrderTraversal_recursion {
     public static void main(String[] args) {

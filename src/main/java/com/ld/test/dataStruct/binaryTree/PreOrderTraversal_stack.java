@@ -13,6 +13,8 @@ public class PreOrderTraversal_stack {
         TreeNode root = PreOrderTraversal_recursion.initTreeNode();
         PreOrderTraversal_stack preOrderTraversal_stack = new PreOrderTraversal_stack();
         preOrderTraversal_stack.traveral(root);
+        System.out.println("");
+        preOrderTraversal_stack.traversal1(root);
     }
 
     private void traveral(TreeNode root) {
@@ -27,6 +29,27 @@ public class PreOrderTraversal_stack {
             System.out.print(current.getVal());
             stack.addFirst(current.getRight());
             stack.addFirst(current.getLeft());
+        }
+    }
+
+    /**
+     * 2021-12-16复习
+     * @param root
+     */
+    private void traversal1(TreeNode root) {
+        LinkedList<TreeNode> stack = new LinkedList<>();
+        stack.addFirst(root);
+        while (stack.size() > 0) {
+            TreeNode node = stack.pop();
+            System.out.print(node.getVal());
+            if (Objects.nonNull(node.getRight())) {
+                stack.addFirst(node.getRight());
+                node.setRight(null);
+            }
+            if (Objects.nonNull(node.getLeft())) {
+                stack.addFirst(node.getLeft());
+                node.setLeft(null);
+            }
         }
     }
 }
